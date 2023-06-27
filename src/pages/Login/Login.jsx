@@ -22,11 +22,11 @@ const Login = () => {
     <FormStyled onSubmit={handleSubmit} autoComplete="off">
       <LabelStyled>
         Email
-        <input type="email" name="email" />
+        <input type="email" name="email" required />
       </LabelStyled>
       <LabelStyled>
         Password
-        <input type="password" name="password" />
+        <input type="password" name="password" required minLength={7} maxLength={20} />
       </LabelStyled>
       <Button type="submit">Log In</Button>
     </FormStyled>

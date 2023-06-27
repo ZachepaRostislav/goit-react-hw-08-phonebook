@@ -23,6 +23,7 @@ const logOutFulfilledReducer = state => {
 const refreshUserFulfilledReducer = (state, action) => {
   state.user = action.payload;
   state.isLoggedIn = true;
+  state.isRefreshing = false;
 };
 
 const refreshUserToggleReducer = state => {
